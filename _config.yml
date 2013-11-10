@@ -1,3 +1,8 @@
 name: Gil.mn
 markdown: redcarpet
 pygments: true
+
+# RSS Generator
+url: http://gil.mn
+author: Joel Gillman
+
