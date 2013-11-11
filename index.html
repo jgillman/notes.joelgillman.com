@@ -3,11 +3,19 @@ layout: default
 title: Gil.mn
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Posts</h1>
+    <ul class="list-unstyled">
+      {% for post in site.posts %}
+        <li>
+          <time datetime="{{post.date | date: "%Y-%m-%d"}}">
+            <em>{{ post.date | date_to_string }}</em>
+          </time>
+          &raquo;
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
