@@ -5,6 +5,15 @@ $screen-sm-min: 768px
 $screen-md-min: 992px
 $screen-lg-min: 1200px
 
+%clearfix:before,
+%clearfix:after
+  content: ''
+  display: table
+%clearfix:after
+  clear: both
+%clearfix
+  *zoom: 1
+
 body
   padding-top: 70px
 
@@ -12,4 +21,12 @@ body
     margin: 4em 0
     padding: 1em 0
     border-top: 1px solid rgb(214, 214, 214)
+
+.post__tags
+  @extend %clearfix
+
+.post__tag
+  float: left
+  margin-right: 0.4em
+  margin-bottom: 0.4em
 

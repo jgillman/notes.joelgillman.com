@@ -6,21 +6,20 @@ layout: default
   <header class="post__header col-md-4">
     <h1>{{ page.title }}</h1>
 
-    <ul>
-      {% for tag in page.tags %}
-      <li>
-        <a href="{{ tag | tag_url }}">
-          {{ tag }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-
     <p class="text-muted">
-      <time datetime="{{page.date | date: "%Y-%m-%d"}}">
+      <time datetime="{{page.date | date: '%Y-%m-%d'}}">
         <em>{{ page.date | date_to_string }}</em>
       </time>
     </p>
+
+    <div class="post__tags">
+      {% for tag in page.tags %}
+      <a class="post__tag btn btn-xs btn-{{ tag | tag_color_name }}" href="{{ tag | tag_url }}">
+        <span class="glyphicon glyphicon-tag"></span>
+        {{ tag }}
+      </a>
+      {% endfor %}
+    </div>
   </header>
 
   <article class="post__content col-md-8">
