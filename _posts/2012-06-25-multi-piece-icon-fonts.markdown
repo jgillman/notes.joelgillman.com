@@ -21,7 +21,7 @@ opinion, are:
 
 Many of our icons utilize multiple colors for different parts.
 
-<img src="https://coderwall-assets-0.s3.amazonaws.com/uploads/picture/file/182/fig1.png" class="img-responsive">
+<img src="https://coderwall-assets-0.s3.amazonaws.com/uploads/picture/file/182/fig1.png" class="img-thumbnail img-responsive">
 
 *This image is a bad example because it's all white and you can't actually see
 the 30% transparent black.*
