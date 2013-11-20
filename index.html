@@ -6,7 +6,9 @@ title: Joel Gillman
 <div class="row">
 
   <div class="col-sm-12">
-    <h1>Posts by date</h1>
+    <div class="page-header">
+      <h1>Posts <small>by date</small></h1>
+    </div>
     <ul class="list-unstyled">
       {% for post in site.posts %}
       {% if post.layout == 'post' %}
@@ -22,5 +24,17 @@ title: Joel Gillman
     </ul>
   </div>
 
+</div>
+
+<div class="row">
+  <div class="col-sm-12 col-lg-6">
+  <h2>Tags</h2>
+  {% for tag in site.tags %}
+    <a class="post__tag btn btn-xs btn-{{ tag[0] | tag_color_name }}" href="{{ tag[0] | tag_url }}">
+      <span class="glyphicon glyphicon-tag"></span>
+      {{ tag[0] }}
+    </a>
+  {% endfor %}
+  </div>
 </div>
 
