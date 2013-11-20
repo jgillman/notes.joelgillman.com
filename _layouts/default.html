@@ -8,8 +8,8 @@
 
   <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.1/united/bootstrap.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="/css/syntax.css">
-	<link rel="stylesheet" href="/css/styles.css">
+  <link href="/assets/css/syntax.css" rel="stylesheet">
+  <link href="/assets/css/styles.css" rel="stylesheet">
 
 </head>
 <body>
@@ -30,28 +30,17 @@
 
       <nav class="collapse navbar-collapse" id="main-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav">
-        {% for link in site.navigation.right %}
-          {% assign current = nil %}
-          {% if page.url == link.url or page.layout == link.layout %}
-            {% assign current = 'active' %}
-          {% endif %}
-
-          <li class="{{ current }}">
-            <a href="{{ link.url }}">{{ link.text }}</a>
+          <li class="active">
+            <a href="/">Notes</a>
           </li>
-        {% endfor %}
         </ul>
         <ul class="nav navbar-nav navbar-right">
-        {% for link in site.navigation.left %}
-          {% assign current = nil %}
-          {% if page.url == link.url or page.layout == link.layout %}
-            {% assign current = 'active' %}
-          {% endif %}
-
-          <li class="{{ current }}">
-            <a href="{{ link.url }}">{{ link.text }}</a>
+          <li>
+            <a href="http://joelgillman.com">
+              Portfolio
+              <span class="glyphicon glyphicon-new-window"></span>
+            </a>
           </li>
-        {% endfor %}
         </ul>
       </nav>
 

@@ -5,24 +5,6 @@ permalink: /:year/:month/:title
 paginate: 2
 paginate_path: "page-num"
 
-# Navigation
-navigation:
-  right:
-  - text: Work
-    url: /work/index.html
-  # - text: Projects
-  #   url: /projects/index.html
-  - text: Blog
-    url: /blog/index.html
-    layout: post
-  left:
-  - text: About
-    url: /about/index.html
-  - text: Resume
-    url: /resume/index.html
-  - text: Contact
-    url: /contact/index.html
-
 # RSS Generator Plugin
 url: http://joelgillman.com/blog/
 author: Joel Gillman
@@ -37,10 +19,4 @@ image:
         class: img-responsive img-thumbnail
         itemprop: image
       width: 750
-    thumb:
-      attr:
-        class: img-responsive work-tile__thumbnail
-        itemprop: image
-      width: 280
-      height: 280
 
