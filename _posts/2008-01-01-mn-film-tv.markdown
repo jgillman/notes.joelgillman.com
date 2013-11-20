@@ -1,0 +1,19 @@
+---
+layout: project
+category: work
+tags:
+  - shortcut
+  - snippet
+  - sublime
+  - sublime text
+  - text
+  - webdev
+title: MN Film TV
+company: MCAD Design Works
+keywords: HTML, CSS
+---
+
+Coded mnHotline section - including user side pages - and assisted in design process.
+
+[mnfilmtv.org/mnhotline/](http://mnfilmtv.org/mnhotline/)
+

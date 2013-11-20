@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>{{ page.title }}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="//netdna.bootstrapcdn.com/bootswatch/3.0.1/united/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.1/united/bootstrap.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="/css/syntax.css">
 	<link rel="stylesheet" href="/css/styles.css">
 
 </head>
 <body>
-	<a href="#content" class="sr-only">Skip to main content</a>
+  <a href="#content" class="sr-only">Skip to main content</a>
 
-	<header class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
+  <header class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
 
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/">{{ site.name }}</a>
-			</div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">{{ site.name }}</a>
+      </div>
 
-			<nav class="collapse navbar-collapse" id="main-navbar-collapse" role="navigation">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="/">Blog</a></li>
-				</ul>
-			</nav>
+      <nav class="collapse navbar-collapse" id="main-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+        {% for link in site.navigation.right %}
+          {% assign current = nil %}
+          {% if page.url == link.url or page.layout == link.layout %}
+            {% assign current = 'active' %}
+          {% endif %}
 
-		</div>
-	</header>
+          <li class="{{ current }}">
+            <a href="{{ link.url }}">{{ link.text }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        {% for link in site.navigation.left %}
+          {% assign current = nil %}
+          {% if page.url == link.url or page.layout == link.layout %}
+            {% assign current = 'active' %}
+          {% endif %}
 
-	<div class="container" id="content">
-		{{ content }}
-	</div>
+          <li class="{{ current }}">
+            <a href="{{ link.url }}">{{ link.text }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </nav>
 
-	<footer class="container">
-		<div class="row">
+    </div>
+  </header>
 
-			<div class="col-sm-4">
-				<h4>Joel Gillman</h4>
-				<p>
-					Cofounder + Developer at <a href="https://www.goldbely.com">Goldbely</a><br>
-					joel@joelgillman.com
-				</p>
-			</div>
+  <div class="container" id="content">
+    {{ content }}
+  </div>
 
-			<div class="col-sm-4">
-				<h4>Contact</h4>
-				<p>
-					<a href="https://github.com/jgillman">github.com/jgillman</a><br>
-					<a href="https://twitter.com/jgillman">twitter.com/jgillman</a><br>
-				</p>
-			</div>
+  <footer class="container">
+    <div class="row">
 
-		</div>
-	</footer>
+      <div class="col-sm-4">
+        <h4>Joel Gillman</h4>
+        <p>
+          Cofounder + Developer at <a href="https://www.goldbely.com">Goldbely</a><br>
+          joel@joelgillman.com
+        </p>
+      </div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+      <div class="col-sm-4">
+        <h4>Contact</h4>
+        <p>
+          <a href="https://github.com/jgillman">github.com/jgillman</a><br>
+          <a href="https://twitter.com/jgillman">twitter.com/jgillman</a><br>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 </body>
 </html>

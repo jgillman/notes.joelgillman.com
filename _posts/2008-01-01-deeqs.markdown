@@ -1,0 +1,18 @@
+---
+layout: project
+category: work
+tags:
+  - shortcut
+  - snippet
+  - sublime
+  - sublime text
+  - text
+  - webdev
+title: Deeqs
+company: Space150, for Dairy Queen
+keywords: Flash, Illustrator
+---
+
+Prototyped and built animations for World View.
+
+[deeqs.com](http://deeqs.com/)

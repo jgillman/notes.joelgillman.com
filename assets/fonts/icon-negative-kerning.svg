@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?> <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" > <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+<defs >
+<font horiz-adv-x="850" ><font-face
+    font-family="Blip Icons Roman"
+    units-per-em="1000"
+    panose-1="0 0 5 0 0 0 0 0 0 0"
+    ascent="1001"
+    descent="-199"
+    alphabetic="0" />
+<missing-glyph horiz-adv-x="250" />
+<glyph unicode=" " glyph-name="space" horiz-adv-x="250" />
+<glyph unicode="5" glyph-name="five" horiz-adv-x="1000" d="M975 104T975 300T836 635T500 775T165 636T25 300T164 -35T500 -175T835 -36Z" />
+<glyph unicode="6" glyph-name="six" horiz-adv-x="1000" d="M500 737Q319 737 191 609T63 300Q63 118 191 -10Q321 -138 500 -138Q680 -138 810 -10Q938 120 938 300Q938 479 810 609Q682 737 500 737ZM364 800T500 800T751 733T933 551T1000 300T933 49T751
+-133T500 -200T249 -134T67 48T0 300T67 551T249 733Z" />
+<glyph unicode="7" glyph-name="seven" horiz-adv-x="1000" d="M655 675T500 675T235 565T125 300T235 35T500 -75T765 35T875 300T765 565ZM294 800T500 800T854 654Q1000 506 1000 300T854 -54Q706 -200 500 -200T146 -54Q0 94 0 300T146 654Q294 800 500 800Z" />
+<glyph unicode="p" glyph-name="p" horiz-adv-x="1000" d="M408 465Q420 465 428 460L692 328Q717 316 717 289T692 249L428 117Q420 113 408 113Q392 113 384 119Q364 132 364 157V421Q364 446 384 459Q394 465 408 465Z" />
+</font>
+</defs>
+</svg>
