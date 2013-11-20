@@ -2,15 +2,15 @@
 layout: project
 category: work
 tags:
-  - shortcut
-  - snippet
-  - sublime
-  - sublime text
-  - text
-  - webdev
+  - html
+  - css
+  - prototype
+  - scriptaculous
+  - photoshop
+  - flash
+  - actionscript 3
 title: Joel Gillman (.com)
-company: Personal Portfolio
-keywords: HTML, CSS, Prototype / Scriptaculous, Photoshop, Flash, ActionScript 3
+company: self
 ---
 
 Older version of my online portfolio.

@@ -2,15 +2,14 @@
 layout: project
 category: work
 tags:
-  - shortcut
-  - snippet
-  - sublime
-  - sublime text
-  - text
-  - webdev
+  - html
+  - css
+  - stacey cms
+  - photoshop
+  - animation
+  - video
 title: Lindsey Testolin (.com)
-company: Freelance
-keywords: HTML, CSS, Stacey CMS, Photoshop
+company: Lindsey Testolin
 ---
 
 Online artist&rsquo;s portfolio designed to showcase the artist&rsquo;s work.

@@ -10,8 +10,8 @@ navigation:
   right:
   - text: Work
     url: /work/index.html
-  - text: Projects
-    url: /projects/index.html
+  # - text: Projects
+  #   url: /projects/index.html
   - text: Blog
     url: /blog/index.html
     layout: post
@@ -39,7 +39,7 @@ image:
       width: 750
     thumb:
       attr:
-        class: img-responsive
+        class: img-responsive work-tile__thumbnail
         itemprop: image
       width: 280
       height: 280

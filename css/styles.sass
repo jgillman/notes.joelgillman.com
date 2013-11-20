@@ -5,6 +5,13 @@ $screen-sm-min: 768px
 $screen-md-min: 992px
 $screen-lg-min: 1200px
 
+$color-default: #aea79f
+$color-primary: #dd4814
+$color-success: #38b44a
+$color-info:    #772953
+$color-warning: #efb73e
+$color-danger:  #df382c
+
 %clearfix:before,
 %clearfix:after
   content: ''
@@ -15,12 +22,12 @@ $screen-lg-min: 1200px
   *zoom: 1
 
 body
-  padding-top: 70px
+  padding-top: 50px
 
   > footer
     margin: 4em 0
     padding: 1em 0
-    border-top: 1px solid rgb(214, 214, 214)
+    border-top: 2px solid $color-default
 
 .post__content
   margin-top: 2em
@@ -32,4 +39,22 @@ body
   float: left
   margin-right: 0.4em
   margin-bottom: 0.4em
+
+.work-tile
+  margin-bottom: 0.4em
+
+  @media (min-width: $screen-md-min)
+    &:nth-child(3n+1)
+      clear: left
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min)
+    &:nth-child(2n+1)
+      clear: left
+
+.work-tile__content
+  border-top: 2px solid $color-success
+
+.work-tile__thumbnail
+  display: inline-block
+  max-width: 140px
+  width: 100%
 
