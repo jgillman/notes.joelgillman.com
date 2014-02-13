@@ -9,11 +9,9 @@ tags:
 - awk
 ---
 
-Git stash is a pretty sweet feature, but unfortunately my brain doesn't always
-remember that I've stashed something when I come back to a commit.
-
-Lately, instead of stashing unfinished work I've been committing everything
-with `git commit -am "wip"`.
+Git stash is a pretty sweet feature, but I don't always remember that I've
+stashed something when I come back to a commit. Instead of stashing unfinished
+work I've been committing everything with `git commit -am "wip"`.
 
 Then I updated my prompt so that when the previous commit starts with "wip" it
 adds a little red indicator to my prompt. That way, when I go back to a branch
