@@ -10,6 +10,7 @@ GEM
       execjs
     coffee-script-source (1.9.1)
     colorator (0.1)
+    dotenv (1.0.2)
     execjs (2.4.0)
     fast-stemmer (1.0.2)
     ffi (1.9.6)
@@ -69,6 +70,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   jekyll
   jekyll-sass-converter
   mini_magick

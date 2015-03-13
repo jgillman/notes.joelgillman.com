@@ -3,7 +3,9 @@ require 'rake'
 require 'yaml'
 require 'time'
 require 'pry'
+require 'dotenv'
 
+Dotenv.load
 
 SOURCE = "."
 CONFIG = {
@@ -111,10 +113,24 @@ task :page do
 end # task :page
 
 
-desc "Launch preview environment"
+desc "Launch preview environment with all posts including drafts and future posts"
 task :preview do
-  system "jekyll serve -w"
+  system "jekyll serve --watch --drafts --future"
 end # task :preview
+
+desc "Build the site for production"
+task :build do
+  system "jekyll build"
+end
+
+desc "Use rsync to upload your _site folder to a remote server"
+task :sync do
+  if ENV['REMOTE_HOST'] && ENV['REMOTE_PATH']
+    system "rsync --itemize-changes --compress --recursive --checksum --delete _site/ #{ ENV.fetch 'REMOTE_HOST' }:#{ ENV.fetch 'REMOTE_PATH' }"
+  else
+    puts 'Please fill out your .env file.'
+  end
+end
 
 
 def ask(message, valid_options)
