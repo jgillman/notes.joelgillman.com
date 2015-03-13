@@ -1,6 +1,5 @@
 name: Joel Gillman
-markdown: redcarpet
-pygments: true
+baseurl: ''
 permalink: /:year/:month/:title
 paginate: 2
 paginate_path: "page-num"
@@ -8,6 +7,20 @@ paginate_path: "page-num"
 # RSS Generator Plugin
 url: http://joelgillman.com/blog/
 author: Joel Gillman
+
+highlighter: pygments
+
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - space_after_headers
+    - strikethrough
+    - superscript
+    - tables
+
+sass:
+  sass_dir: _sass
 
 # Image Tag Plugin
 image:
