@@ -4,6 +4,11 @@ permalink: /:year/:month/:title
 paginate: 2
 paginate_path: "page-num"
 
+# File/Dirs to exclude from builds
+exclude:
+  - Gemfile*
+  - Rakefile
+
 # RSS Generator Plugin
 url: http://joelgillman.com/blog/
 author: Joel Gillman
