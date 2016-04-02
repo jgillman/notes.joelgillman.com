@@ -3,7 +3,9 @@ layout: post
 title: "Create Apple Push Notification certificates for Heroku with a .pem extension"
 description: ""
 category: ""
-tags: []
+tags:
+- apple
+- ios
 ---
 
 There's a lot of info out there and a lot of tutorials on how to generate Apple
